@@ -2,12 +2,31 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Navigation from './components/Navigation';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import Footer from './components/Footer';
+import Contact from './components/Contact';
+
+
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
   <React.StrictMode>
+    <BrowserRouter>
+    
+    
+    <Navigation/>
+    
     <App />
+    
+    <Footer/>
+    
+    </BrowserRouter>
   </React.StrictMode>
 );
 
